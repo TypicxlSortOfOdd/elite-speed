@@ -1,7 +1,12 @@
+const CONFIG = {
+    id: "com.TypicxlSortOfOdd.elite-speed",
+    mod_name: "Elite Speed",
+};
+
 (function () {
     const api = window.SubwayBuilderAPI;
 
-    console.log('[Shinkansen] Loaded!');
+    console.log(`[${CONFIG.mod_name}] Loaded! Version`);
 
     api.hooks.onGameInit(() => {
         api.ui.showNotification('Shinkansen loaded.', 'success');
@@ -9,8 +14,8 @@
 
     window.SubwayBuilderAPI.trains.registerTrainType({
         id: 'shinkansen',
-        name: 'Bullet - Shinkansen',
-        description: 'Extremely fast Japanese Bullet Trains. Modelled after Shinkansen.',
+        name: 'Jap. Bullet Train',
+        description: 'Japanese Bullet Trains; modelled after Shinkansen.',
         stats: {
             maxAcceleration: 0.72,
             maxDeceleration: 1.2,
@@ -40,7 +45,7 @@
         },
         compatibleTrackTypes: ['Shinkansen'],
         appearance: {
-            color: '#8b5cf6'
+            color: '#939393'
         }
     });
 
