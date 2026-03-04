@@ -17,9 +17,9 @@ const CONFIG = {
         name: 'Jap. Bullet Train',
         description: 'Japanese Bullet Trains; modelled after Shinkansen.',
         stats: {
-            maxAcceleration: 0.72,
-            maxDeceleration: 1.2,
-            maxSpeed: 88, // m/s (~90 mph)
+            maxAcceleration: 0.70,
+            maxDeceleration: 0.82,
+            maxSpeed: 85, // m/s
             maxSpeedLocalStation: 55,
             capacityPerCar: 83,
             carLength: 25,
@@ -35,7 +35,7 @@ const CONFIG = {
             trainOperationalCostPerHour: 1800,
             carOperationalCostPerHour: 125,
             scissorsCrossoverCost: 4_500_000,
-            stopTimeSeconds: 60,
+            stopTimeSeconds: 48,
             parallelTrackSpacing: 4.3,
             trackClearance: 5.5,
             maxLateralAcceleration: 0.8,
@@ -47,6 +47,83 @@ const CONFIG = {
         appearance: {
             color: '#939393'
         }
+        
+    });
+
+    window.SubwayBuilderAPI.trains.registerTrainType({
+        id: 'maglev',
+        name: 'Jap. Maglev',
+        description: 'Japanese Maglev; modelled after the SCMaglev L0 Series.',
+        stats: {
+            maxAcceleration: 1.32,
+            maxDeceleration: 1.32,
+            maxSpeed: 160, // m/s
+            maxSpeedLocalStation: 85,
+            capacityPerCar: 68,
+            carLength: 24.5,
+            minCars: 4,
+            maxCars: 16,
+            carsPerCarSet: 4,
+            carCost: 12_000_000,
+            trainWidth: 2.9,
+            minStationLength: 100,
+            maxStationLength: 400,
+            baseTrackCost: 250_000,
+            baseStationCost: 250_000_000,
+            trainOperationalCostPerHour: 3000,
+            carOperationalCostPerHour: 225,
+            scissorsCrossoverCost: 16_000_000,
+            stopTimeSeconds: 45,
+            parallelTrackSpacing: 4.5,
+            trackClearance: 5.5,
+            maxLateralAcceleration: 1.15,
+            minTurnRadius: 100,
+            minStationTurnRadius: 100,
+            maxSlopePercentage: 5.5,
+        },
+        compatibleTrackTypes: ['Maglev'],
+        appearance: {
+            color: '#939393'
+        }
+        
+    });
+
+    window.SubwayBuilderAPI.trains.registerTrainType({
+        id: 'vacrail',
+        name: 'VacRail',
+        description: 'Rail surrounded by a vacuum minimizes air resistance; modelled after vactrain concepts.',
+        stats: {
+            maxAcceleration: 1.32,
+            maxDeceleration: 1.32,
+            maxSpeed: 313, // m/s
+            maxSpeedLocalStation: 110,
+            capacityPerCar: 25,
+            carLength: 16,
+            minCars: 8,
+            maxCars: 12,
+            carsPerCarSet: 4,
+            carCost: 12_000_000,
+            trainWidth: 2.9,
+            minStationLength: 100,
+            maxStationLength: 400,
+            baseTrackCost: 750_000,
+            baseStationCost: 550_000_000,
+            trainOperationalCostPerHour: 1600,
+            carOperationalCostPerHour: 100,
+            scissorsCrossoverCost: 20_000_000,
+            stopTimeSeconds: 45,
+            parallelTrackSpacing: 3.2,
+            trackClearance: 4,
+            maxLateralAcceleration: 1.12,
+            minTurnRadius: 100,
+            minStationTurnRadius: 100,
+            maxSlopePercentage: 8,
+        },
+        compatibleTrackTypes: ['VacRail'],
+        appearance: {
+            color: '#939393'
+        }
+        
     });
 
 
