@@ -1,0 +1,10 @@
+{
+    "id": "com.TypicxlSortOfOdd.shinkansen",
+    "name": "Shinkansen",
+    "description": "Adds Japanese Bullet Trains to the game.",
+    "version": "1.0",
+    "author": {
+        "name": "TypicxlSortOfOdd"
+    },
+    "main": "index.js"
+}
