@@ -39,8 +39,8 @@ const CONFIG = {
                 maxStationLength: 410,
                 baseTrackCost: 100_000,
                 baseStationCost: 150_000_000,
-                trainOperationalCostPerHour: 1800,
-                carOperationalCostPerHour: 125,
+                trainOperationalCostPerHour: 1350,
+                carOperationalCostPerHour: 135,
                 scissorsCrossoverCost: 4_500_000,
                 stopTimeSeconds: 48,
                 parallelTrackSpacing: 4.3,
@@ -67,7 +67,7 @@ const CONFIG = {
                 maxDeceleration: 1.32, // m/s | 4.75kph/s | 2.95mph/s
                 maxSpeed: 160, // m/s | 576kph | 357mph
                 maxSpeedLocalStation: 85, // m/s | 306kph | 190mph
-                capacityPerCar: 68,
+                capacityPerCar: 72,
                 carLength: 24.5,
                 minCars: 4,
                 maxCars: 16,
@@ -78,8 +78,8 @@ const CONFIG = {
                 maxStationLength: 400,
                 baseTrackCost: 250_000,
                 baseStationCost: 250_000_000,
-                trainOperationalCostPerHour: 3000,
-                carOperationalCostPerHour: 225,
+                trainOperationalCostPerHour: 1600,
+                carOperationalCostPerHour: 160,
                 scissorsCrossoverCost: 16_000_000,
                 stopTimeSeconds: 45,
                 parallelTrackSpacing: 4.5,
