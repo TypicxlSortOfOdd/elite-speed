@@ -8,9 +8,15 @@ _This mod was built to support versions up to and around this version_
 
 ### Shinkansen
 Also known as the Japanese Bullet Train, Shinkansen is one of the most recognizable passenger trains in existence.
-- Runs up to 196.8 Mi/H ( 316.9 Km/H | 88 m/s )
+- Runs up to 85 m/s ( 306kph | 190mph )
 - Very high operating costs
 - 6 to 16 cars; 2 car set ( 6 | 8   10   12   14 | 16 )
+
+### Maglev
+Also known as the Japanese Maglev or the SCMaglev L0 Series.
+- Runs up to 160 m/s ( 576kph | 357mph )
+- Very high operating costs
+- 4 to 16 cars; 4 car set ( 4 | 8   12 | 16 )
 
 ### About
 This mod is in testing.
