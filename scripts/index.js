@@ -24,8 +24,8 @@ const CONFIG = {
             },
 
             stats: {
-                maxAcceleration: 0.68, // m/s | 2.44kph/s | 1.52mph/s
-                maxDeceleration: 0.9, // m/s | 3.24kph/s | 2mph/s
+                maxAcceleration: 0.7, // m/s | 2.44kph/s | 1.52mph/s
+                maxDeceleration: 0.92, // m/s | 3.24kph/s | 2mph/s
                 maxSpeed: 85, // m/s | 306kph | 190mph
                 maxSpeedLocalStation: 55.6, // m/s | 200kph | 124mph
                 capacityPerCar: 83,
