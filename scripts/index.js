@@ -1,7 +1,7 @@
 const CONFIG = {
     ID: "com.TypicxlSortOfOdd.elite-speed",
     MOD_NAME: "Elite Speed",
-    EXPERIMENTAL_MODE: false,
+    EXPERIMENTAL_MODE: true,
 };
 
 (function () {
@@ -20,12 +20,12 @@ const CONFIG = {
             compatibleTrackTypes: ['Shinkansen'],
 
             appearance: {
-                color: '#939393'
+                color: '#2f0022'
             },
 
             stats: {
-                maxAcceleration: 0.7, // m/s | 2.44kph/s | 1.52mph/s
-                maxDeceleration: 0.92, // m/s | 3.24kph/s | 2mph/s
+                maxAcceleration: 0.7, // m/s | 2.44kph/s | 1.52mph/s | 0.0714g
+                maxDeceleration: 0.92, // m/s | 3.24kph/s | 2mph/s | 0.0939g
                 maxSpeed: 85, // m/s | 306kph | 190mph
                 maxSpeedLocalStation: 55.6, // m/s | 200kph | 124mph
                 capacityPerCar: 83,
@@ -45,7 +45,7 @@ const CONFIG = {
                 stopTimeSeconds: 48,
                 parallelTrackSpacing: 4.3,
                 trackClearance: 5.5, // 0.4m Clearance
-                maxLateralAcceleration: 0.8, // m/s | 2.88kph/s | 1.78mph/s
+                maxLateralAcceleration: 0.8, // m/s | 2.88kph/s | 1.78mph/s | 0.0816g
                 minTurnRadius: 100,
                 minStationTurnRadius: 100,
                 maxSlopePercentage: 3.5,
@@ -59,12 +59,12 @@ const CONFIG = {
             compatibleTrackTypes: ['SCMaglev'],
 
             appearance: {
-                color: '#939393'
+                color: '#490000'
             },
 
             stats: {
-                maxAcceleration: 1.32, // m/s | 4.75kph/s | 2.95mph/s
-                maxDeceleration: 1.32, // m/s | 4.75kph/s | 2.95mph/s
+                maxAcceleration: 1.32, // m/s | 4.75kph/s | 2.95mph/s | 0.1347g
+                maxDeceleration: 1.32, // m/s | 4.75kph/s | 2.95mph/s | 0.1347g
                 maxSpeed: 160, // m/s | 576kph | 357mph
                 maxSpeedLocalStation: 85, // m/s | 306kph | 190mph
                 capacityPerCar: 72,
@@ -84,7 +84,7 @@ const CONFIG = {
                 stopTimeSeconds: 45,
                 parallelTrackSpacing: 4.5,
                 trackClearance: 5.5, // 1.15m Clearance
-                maxLateralAcceleration: 1.15, // m/s | 4.14kph/s | 2.57mph/s
+                maxLateralAcceleration: 1.15, // m/s | 4.14kph/s | 2.57mph/s | 0.1173g
                 minTurnRadius: 100,
                 minStationTurnRadius: 100,
                 maxSlopePercentage: 5.5,
@@ -96,8 +96,8 @@ const CONFIG = {
     };
 
     try {
-        if(CONFIG.EXPERIMENTAL_MODE === true) {
-            api.warn(`[${CONFIG.MOD_NAME}] Experimental mode enabled.`)
+        if(CONFIG.EXPERIMENTAL_MODE) {
+            console.warn(`[${CONFIG.MOD_NAME}] Experimental mode enabled.`)
             api.trains.registerTrainType({
                 id: 'VacRail',
                 name: 'VacRail',
@@ -109,9 +109,9 @@ const CONFIG = {
                 },
 
                 stats: {
-                    maxAcceleration: 1.45,
-                    maxDeceleration: 1.45,
-                    maxSpeed: 313, // m/s
+                    maxAcceleration: 1.7, // m/s | 6.12kph/s | 3.80mph/s | 0.1734g
+                    maxDeceleration: 1.7, // m/s | 6.12kph/s | 3.80mph/s | 0.1734g
+                    maxSpeed: 313, // m/s | 1126kph | 700mph
                     maxSpeedLocalStation: 110,
                     capacityPerCar: 30,
                     carLength: 20,
@@ -130,7 +130,7 @@ const CONFIG = {
                     stopTimeSeconds: 45,
                     parallelTrackSpacing: 3.2,
                     trackClearance: 4,
-                    maxLateralAcceleration: 1.22,
+                    maxLateralAcceleration: 1.3, // m/s | 4.68kph/s | 2.91mph/s | 0.1326g
                     minTurnRadius: 100,
                     minStationTurnRadius: 100,
                     maxSlopePercentage: 5.5,
